@@ -1,0 +1,238 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    background-color: rgba(0, 0, 0, 0.932);
+    color: white;
+    font-size: 1rem;
+    padding: 0 2rem;
+}
+
+a,
+a:visited {
+    text-decoration: none;
+    color: inherit;
+    display: inline-block;
+}
+
+button {
+    font-family: inherit;
+    font-size: inherit;
+    text-transform: inherit;
+    border: none;
+    outline: none;
+}
+
+.container {
+    min-height: 100vh;
+    /* border: 1px solid red; */
+}
+
+.nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    /* border: 1px solid green; */
+    gap: 1rem;
+    height: 60px;
+    text-transform: uppercase;
+}
+
+
+.nav__title {
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.nav__mid {
+    display: flex;
+    flex-direction: row;
+    gap: 2.3rem;
+    /* border: 1px solid red; */
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav__link:hover {
+    color: whitesmoke;
+}
+
+.nav__right {
+    /* border: 1px solid yellow; */
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.nav__btn {
+    display: inline-block;
+    height: 100%;
+    width: 130px;
+    /* border: 1px solid red; */
+    cursor: pointer;
+    background-color: transparent;
+    color: white;
+    transition: all 0.3s ease;
+}
+
+
+.nav__btn:hover {
+    background-color: white;
+    color: black;
+}
+
+/* hero */
+
+.hero {
+    /* border: 1px solid red; */
+    height: calc(100vh - 60px);
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.hero__img {
+    position: absolute;
+    border-radius: 10px;
+}
+
+.img__down {
+    z-index: -2;
+}
+
+.hero__img--portrait {
+    width: auto;
+    height: 200px;
+}
+
+.hero__img--landscape {
+    width: 240px;
+    height: auto;
+}
+
+#photo_1 {
+    left: 90px;
+    top: 60px;
+}
+
+#photo_2 {
+    left: 350px;
+    top: 410px;
+}
+
+#photo_3 {
+    right: 150px;
+    bottom: 140px;
+}
+
+#photo_4 {
+    right: 250px;
+    top: 20px;
+}
+
+.hero__text {
+    font-size: 6rem;
+    text-transform: uppercase;
+    font-weight: 500;
+    z-index: 2;
+    letter-spacing: 5px;
+    /* border: 1px solid red; */
+    min-height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.hero__btn__2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 250px;
+    font-family: serif;
+    letter-spacing: normal;
+    /* border: 1px solid green; */
+    font-size: 2rem;
+    background-color: rgb(138, 59, 59);
+    padding: 1rem 2rem;
+    border-radius: 50px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.hero__btn__2:hover {
+    background-color: rgba(138, 59, 59, 0.941);
+}
+
+.hero__div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.hero__announcement {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    font-size: 1.25rem;
+    margin-top: 2rem;
+    font-weight: normal;
+    letter-spacing: normal;
+}
+
+.box {
+    /* border: 1px solid red; */
+    width: 60px;
+    height: 60px;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    background-color: white;
+}
+
+.hero__cta {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    text-transform: uppercase;
+}
+
+.hero__cta__left,
+.hero__cta__right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    /* border: 1px solid yellow; */
+    height: 100%;
+}
+
+.hero__cta__right {
+    margin: 0 auto;
+}
+
+.hero__cta__left i {
+    cursor: pointer;
+}
+
+.hero__cta__right h3 {
+    font-weight: normal;
+    cursor: pointer;
+}
